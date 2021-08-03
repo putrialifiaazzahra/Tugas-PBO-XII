@@ -70,8 +70,8 @@ include('myLib/myDB.php');
                                 <td><?php echo $data['alamat_lengkap']; ?></td>
                                 <td><?php echo $data['no_hp']; ?></td>
                                 <td>
-                                    <a class="btn btn-success" href="detail-warga.php?id<?php echo $data['id']; ?>">Detail</a> 
-                                    <a class="btn btn-danger" href="index.php?hapus=<?php echo $data['id']; ?>">Hapus</a>
+                                    <a class="btn btn-success" href="detail-warga.php?id=<?php echo $data['id']; ?>">Detail</a> 
+                                    <a class="btn btn-danger" href="hapus.php?hapus=<?php echo $data['id']; ?>">Hapus</a>
                                 </td>
                             </tr>
 

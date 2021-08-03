@@ -2,10 +2,10 @@
 include('myLib/myDB.php');
 
 $Db = new myDb();
-$data_warga = $Db->show();
+
 // print_r($data_warga);
 if (isset($_GET['hapus'])) {
-    echo "Data dengan ID :".$_GET['hapus']." akan dihapus"; 
+    // echo "Data dengan ID :".$_GET['hapus']." akan dihapus"; 
     $idwarga = $_GET['hapus'];
     $queryhapus = $Db->delete($idwarga);
     if ($queryhapus==TRUE) {
